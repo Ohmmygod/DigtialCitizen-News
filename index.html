@@ -1,106 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fake News Project</title>
-    <style>
-        /* CSS อยู่ในส่วนนี้ */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1.5rem 0;
-        }
-        header h1 {
-            margin: 0;
-        }
-        header p {
-            font-size: 1rem;
-        }
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 1rem;
-            gap: 1rem;
-        }
-        .news-box {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 1rem;
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .news-box h2 {
-            color: #4CAF50;
-            font-size: 1.2rem;
-            margin: 0 0 0.5rem;
-        }
-        .news-box p {
-            font-size: 0.9rem;
-            line-height: 1.4;
-            margin-bottom: 1rem;
-        }
-        .news-box a {
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: bold;
-            text-align: right;
-            display: block;
-        }
-        .news-box a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 1rem 0;
-            margin-top: 1rem;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fake News Project</title>
+	<style>
+		/* CSS อยู่ในส่วนนี้ */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f4f4f9;
+			color: #333;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+		header {
+			background-color: #4CAF50;
+			color: white;
+			text-align: center;
+			padding: 1.5rem 0;
+		}
+		header h1 {
+			margin: 0;
+		}
+		header p {
+			font-size: 1rem;
+		}
+		main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 1rem;
+			margin: auto 0;
+			gap: 1rem;
+		}
+		.news-box {
+			background-color: white;
+			border-radius: 8px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			padding: 1rem;
+			width: 300px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.news-box h2 {
+			color: #4CAF50;
+			font-size: 1.2rem;
+			margin: 0 0 0.5rem;
+		}
+		.news-box p {
+			font-size: 0.9rem;
+			line-height: 1.4;
+			margin-bottom: 1rem;
+		}
+		.news-box a {
+			color: #4CAF50;
+			text-decoration: none;
+			font-weight: bold;
+			text-align: right;
+			display: block;
+		}
+		.news-box a:hover {
+			text-decoration: underline;
+		}
+		footer {
+			text-align: center;
+			background-color: #333;
+			color: white;
+			padding: 1rem 0;
+			margin-top: auto;
+		}
+	</style>
 </head>
 <body>
-    <header>
-        <h1>Fake News Project</h1>
-        <p>ข่าวจริงและข่าวปลอม: ทดสอบความรู้ดิจิทัล</p>
-    </header>
-    <main>
-        <div class="news-box">
-            <h2>ข่าวที่ 1: พบช่องโหว่ใน OS ใหม่!</h2>
-            <p>พบช่องโหว่ในระบบปฏิบัติการบนมือถือทั้ง iOS และ Android มิจฉาชีพสามารถสร้าง Interface ของหน้าจอ Lock Screen และหลอกเก็บข้อมูล Biometric เช่น TouchID , FaceID...</p>
-            <a href="news1.html">อ่านเพิ่มเติม</a>
-        </div>
-        <div class="news-box">
-            <h2>ข่าวที่ 2: พบอีกราย มิจฉาชีพร้าย!</h2>
-            <p>“แก๊งสกิมเมอร์ (skimmer)” หรือโจรดูดข้อมูลในบัตรเอทีเอ็ม อีกภัยธุรกรรมทางการเงิน ที่คนในยุคนี้ต้องเรียนรู้ตามโจรให้ทัน...</p>
-            <a href="news2.html">อ่านเพิ่มเติม</a>
-        </div>
-        <div class="news-box">
-            <h2>ข่าวที่ 3: ข่าวด่วนคนอยากผอม!</h2>
-            <p>เซมากลูไทด์ (Semaglutide) หรือ "โอเซมปิก (Ozempic)" ถูกค้นพบว่ามีประโยชน์ต่อสุขภาพในด้านการควบคุมน้ำหนัก...</p>
-            <a href="news3.html">อ่านเพิ่มเติม</a>
-        </div>
-        <div class="news-box">
-            <h2>ข่าวที่ 4: สั่นสะเทือนวงการแพทย์</h2>
-            <p>ทีมนักวิจัยจากมหาวิทยาลัย UCSF และมหาวิทยาลัยวอชิงตัน พัฒนายา SPrEP ซึ่งมีประสิทธิภาพป้องกันการติดเชื้อ HIV ได้ถึง 97%...</p>
-            <a href="news4.html">อ่านเพิ่มเติม</a>
-        </div>
-    </main>
-    <footer>
-        <p>© 2025 Digital Citizen Project</p>
-        <p>Computer Science Group - DC505</p>
-    </footer>
+	<header>
+		<h1>Fake News Project</h1>
+		<p>ข่าวจริงและข่าวปลอม: ทดสอบความรู้ดิจิทัล</p>
+	</header>
+	<main>
+		<div class="news-box">
+			<h2>ข่าวที่ 1: พบช่องโหว่ใน OS ใหม่!</h2>
+			<p>พบช่องโหว่ในระบบปฏิบัติการบนมือถือทั้ง iOS และ Android มิจฉาชีพสามารถสร้าง Interface ของหน้าจอ Lock Screen และหลอกเก็บข้อมูล Biometric เช่น TouchID , FaceID...</p>
+			<a href="news1.html">อ่านเพิ่มเติม</a>
+		</div>
+		<div class="news-box">
+			<h2>ข่าวที่ 2: พบอีกราย มิจฉาชีพร้าย!</h2>
+			<p>“แก๊งสกิมเมอร์ (skimmer)” หรือโจรดูดข้อมูลในบัตรเอทีเอ็ม อีกภัยธุรกรรมทางการเงิน ที่คนในยุคนี้ต้องเรียนรู้ตามโจรให้ทัน...</p>
+			<a href="news2.html">อ่านเพิ่มเติม</a>
+		</div>
+		<div class="news-box">
+			<h2>ข่าวที่ 3: ข่าวด่วนคนอยากผอม!</h2>
+			<p>เซมากลูไทด์ (Semaglutide) หรือ "โอเซมปิก (Ozempic)" ถูกค้นพบว่ามีประโยชน์ต่อสุขภาพในด้านการควบคุมน้ำหนัก...</p>
+			<a href="news3.html">อ่านเพิ่มเติม</a>
+		</div>
+		<div class="news-box">
+			<h2>ข่าวที่ 4: สั่นสะเทือนวงการแพทย์</h2>
+			<p>ทีมนักวิจัยจากมหาวิทยาลัย UCSF และมหาวิทยาลัยวอชิงตัน พัฒนายา SPrEP ซึ่งมีประสิทธิภาพป้องกันการติดเชื้อ HIV ได้ถึง 97%...</p>
+			<a href="news4.html">อ่านเพิ่มเติม</a>
+		</div>
+	</main>
+	<footer>
+		<p>© 2025 Digital Citizen Project</p>
+		<p>Computer Science Group - DC505</p>
+	</footer>
 </body>
 </html>
